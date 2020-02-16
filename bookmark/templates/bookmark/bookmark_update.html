@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block title %}Danidel bookmark{% endblock %}
+
+{% block content %}
+    <form action = "" method = "post">
+        {% csrf_token %}
+        {{form.as_p}}
+        <input type = "submit" value = "Update" class = "btn btn-info btn-sm">
+    </form>
+
+{% endblock %}
+
+<!--<!DOCTYPE html>-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>Daniel bookmark</title>-->
+<!--</head>-->
+<!--<body>-->
+<!--    <form action = "" method = "post">-->
+<!--        {% csrf_token %}-->
+<!--        {{form.as_p}}-->
+<!--        <input type = "submit" value = "Update" class = "btn btn-info btn-sm">-->
+<!--    </form>-->
+
+<!--</body>-->
+<!--</html>-->
